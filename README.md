@@ -11,4 +11,4 @@ image processing algo like flood fill etc
 as well
 -Mathematical curves,that naturally occur in nature such as fibonacci spirals etc
 -path finding and Maze generations are also, planned maybe a basic bfs,dfs visualtions and A*search could be added as well
-![maurer-rose-image](https://github.com/shubhampathak09/RealLife-Natural-pattern-Generations/blob/master/Maurer-Rose/maurer-rose/Maurer-rose-pattern-gen.PNG)
+![maurer-rose-image](https://github.com/shubhampathak09/RealLife-Natural-pattern-Generations/blob/master/Maurer-Rose/maurer-rose/Maurer-rose-pattern-gen.PNG width="400" height="400")
