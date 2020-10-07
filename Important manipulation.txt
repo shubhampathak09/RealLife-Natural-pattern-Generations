@@ -1,0 +1,24 @@
+if x hit the boundary and y also hit the boundary and we need to change theri velocitys
+
+x=x+xpeed
+y=y+yspeed
+
+if(x>width||x<0)
+xspeed*=-1
+if(y>height||y<))
+yspeed*=-1
+}
+
+to check if  circle touch each other
+r1 +r2> d then touch
+d> r1+r2 dont touch
+
+void setup()
+{
+size();  ->processing                     in javascript_> createCanvas(400,400)
+}
+
+void draw()
+{
+
+}
