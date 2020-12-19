@@ -16,4 +16,4 @@ as well
 -adding an image cab be tricky
 
 Procedural terrain generation:-
-<img src="https://github.com/shubhampathak09/RealLife-Natural-pattern-Generations/blob/master/PerlinNoise_Terrain/PerlinNoise_Terrain.PNG" width="400" height="400">
+<img src="https://github.com/shubhampathak09/RealLife-Natural-pattern-Generations/blob/master/PerlinNoise_Terrain/Procedural_terrain.png">
