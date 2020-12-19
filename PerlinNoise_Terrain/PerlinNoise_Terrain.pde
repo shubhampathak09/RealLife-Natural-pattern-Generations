@@ -2,9 +2,10 @@ int cols,rows;
 
 int scl=20;
 
- int w=1200;
- int h=900;
+ int w=2000;
+ int h=1600;
 
+float flying=0;;
 
  float[][] terrain; 
 
@@ -23,9 +24,9 @@ void setup()
 void draw()
 {
   
+flying-=0.1;  
   
-  
-float yoff=0;
+float yoff=flying;
 
 for(int y=0;y<rows;y++)
 {
@@ -35,10 +36,10 @@ for(int y=0;y<rows;y++)
   for(int x=0;x<cols;x++)
   {
     terrain[x][y]=map(noise(xoff,yoff),0,1,-150,150);
-    xoff+=0.11;
+    xoff+=0.1;
     
   }
-  yoff+=0.1;
+  yoff+=0.15;
 }
   
   
