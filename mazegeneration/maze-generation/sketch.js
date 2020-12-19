@@ -37,12 +37,17 @@ function draw() {
   {
    grid[i].show();
   }
-  current.visited=true;
+ current.visited=true;
  var next=current.checkNeighbours();
 
 if(next)
 {
 next.visited=true;
+
+removeWalls(current,next);
+
+
+
 current=next;
 
 }
@@ -57,15 +62,15 @@ function index(i,j)
   {
     return -1;
   }
-  return i+j*cols;
+  return i+j*cols;  // this is how we get a loaction in single d array af it were 2d array
 }
 
 function Cell(i,j)
 {
   this.i=i;  // i row
   this.j=j;  // j col
-
- this.walls=[true,true,true,true];
+  this.visited=false;
+  this.walls=[true,true,true,true];
 // top right bottom left
 
 
@@ -84,7 +89,7 @@ var bottom=grid[index(i,j+1)];
 
 if(top && !top.visited)
 {
-  neighbors.push(top);
+  neighbors.push(top);  //cell object
 }
 
 if(right &&!right.visited)
@@ -106,7 +111,7 @@ if(left && !left.visited)
 if(neighbors.length>0)
 {
   var r=floor(random(0,neighbors.length))
-  return neighbors[r];
+  return neighbors[r];  //
 
 }
 else{
@@ -146,7 +151,46 @@ this.visited=false;
       fill(255,0,255,100);
       rect(x,y,w,w);
     }
-   
+   }
+
+
+
 
   }
-}
+
+
+  
+  function removeWalls(a,b)
+  {
+
+    //[top,right,bot,left]
+    var x=a.i-b.i;
+   
+  if(x===1)
+  {
+    // left cell
+    a.walls[3]=false;   
+    b.wall[1]=false;
+  }
+  else if(x===-1)
+  {
+    b.walls[3]=false;
+    a.walls[1]=false;
+  }
+  var y=a.j-b.j;
+  if(y===1)
+  {
+    a.walls[0]=false;
+    b.wall[2]=false
+  }
+  else if(y===-1)
+  {
+    a.walls[2]=false;
+    b.walls[0]=false;
+  }
+
+  }
+
+
+
+// need revisit something happening strange:-P
