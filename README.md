@@ -17,3 +17,6 @@ as well
 
 Procedural terrain generation:-
 <img src="https://github.com/shubhampathak09/RealLife-Natural-pattern-Generations/blob/master/PerlinNoise_Terrain/Procedural_terrain.png">
+
+Visulalising chaos :-Lorrentz Attractor
+<img src="https://github.com/shubhampathak09/RealLife-Natural-pattern-Generations/blob/master/Lorentz_Attractor/Lorentz_attractor.png">
